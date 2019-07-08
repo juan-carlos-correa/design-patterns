@@ -18,6 +18,8 @@ class ContextInsurance():
       'closed': InsuranceClosed(self)
     }
 
+    self.current_state = None
+
     self.change_state(state_name)
 
   def change_state(self, state_name):
